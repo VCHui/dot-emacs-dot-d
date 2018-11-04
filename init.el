@@ -44,3 +44,5 @@
 
 ;; init.d
 (add-to-list 'load-path (concat user-emacs-directory "init.d"))
+
+(require 'company-setup)
