@@ -1,9 +1,17 @@
 *~
 *\#*
 
+*-theme.el
+
 /auto-save-list/
+/elpa*
+/elpa*/
+/el-get*
+/el-get*/
+!/el-get-user/
 /url/
 
 /.cache/
 /.config/
+/.gnupg/
 /.local/
