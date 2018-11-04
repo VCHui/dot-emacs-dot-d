@@ -11,6 +11,10 @@
 !/el-get-user/
 /url/
 
+recentf
+projectile-bookmarks.eld
+tramp
+
 /.cache/
 /.config/
 /.gnupg/

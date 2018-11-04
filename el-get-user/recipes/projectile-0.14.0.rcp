@@ -1,0 +1,8 @@
+(:name projectile-0.14.0
+       :website "https://github.com/bbatsov/projectile"
+       :description "Project Interaction Library"
+       :type github
+       :branch "master"
+       :checkout "v0.14.0"
+       :pkgname "bbatsov/projectile"
+       )

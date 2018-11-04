@@ -47,3 +47,4 @@
 
 (require 'company-setup)
 (require 'ivy-setup); depends:swiper,counsel;
+(require 'projectile-setup); +counsel-projectile; depends:dash,epl,pkg-info;
