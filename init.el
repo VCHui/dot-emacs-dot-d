@@ -46,3 +46,4 @@
 (add-to-list 'load-path (concat user-emacs-directory "init.d"))
 
 (require 'company-setup)
+(require 'ivy-setup); depends:swiper,counsel;
