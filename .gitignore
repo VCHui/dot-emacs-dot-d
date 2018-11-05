@@ -17,6 +17,8 @@ tramp
 
 /irony/
 
+ac-comphist.dat
+
 /.cache/
 /.config/
 /.gnupg/

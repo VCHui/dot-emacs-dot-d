@@ -54,3 +54,6 @@
 (require 'cc-gtags-setup)
 (require 'cc-irony-setup);
 (add-hook 'c-mode-common-hook (lambda() (setq indent-tabs-mode nil)))
+
+;; python-mode setup
+(require 'python-setup);
