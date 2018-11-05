@@ -46,7 +46,11 @@
 (add-to-list 'load-path (concat user-emacs-directory "init.d"))
 
 (require 'company-setup)
-(require 'ivy-setup); depends:swiper,counsel;
-(require 'projectile-setup); +counsel-projectile; depends:dash,epl,pkg-info;
-(require 'gtags-setup); +counsel-gtags;
-(require 'irony-cc-setup)
+(require 'ivy-setup); + swiper, counsel;
+
+(when (package-installed-p 'el-get) (require 'projectile-setup));
+
+;; cc-mode setup
+(require 'cc-gtags-setup)
+(require 'cc-irony-setup);
+(add-hook 'c-mode-common-hook (lambda() (setq indent-tabs-mode nil)))
