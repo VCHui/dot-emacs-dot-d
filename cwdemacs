@@ -1,3 +1,3 @@
 #!/bin/bash
-HOME=$(dirname $(readlink -f $0))
+HOME=$(cd $(dirname $0) && pwd)
 emacs $*
