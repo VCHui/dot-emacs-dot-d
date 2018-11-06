@@ -2,6 +2,7 @@
 
 ;; basic-setup
 (show-paren-mode t)
+(setq show-paren-style 'expression)
 (add-hook 'find-file-hook (lambda() (ruler-mode t)))
 (add-hook
  'before-save-hook
