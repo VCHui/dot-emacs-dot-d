@@ -2,8 +2,9 @@
 
 ;; basic-setup
 (show-paren-mode t)
-(setq show-paren-style 'expression)
+;; (setq show-paren-style 'expression)
 (add-hook 'find-file-hook (lambda() (ruler-mode t)))
+(add-hook 'find-file-hook (lambda() (linum-mode 1)))
 (add-hook
  'before-save-hook
  (lambda()
@@ -18,7 +19,6 @@
       (load-theme 'tango-dark))
   (load-theme 'tango-dark)
   (tool-bar-mode 0)
-  (add-hook 'find-file-hook (lambda() (linum-mode 1)))
   )
 
 ;; melpa-setup
