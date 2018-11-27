@@ -1,14 +1,14 @@
 ;; projectile-setup
 
 (unless (package-installed-p 'projectile)
-  (if (el-get-install 'projectile-0.14.0)
-      (package-install-file
-       (concat user-emacs-directory "el-get/projectile-0.14.0/projectile.el")))
+  (when (el-get-install 'projectile-0.14.0)
+    (package-install-file
+     (concat user-emacs-directory "el-get/projectile-0.14.0/projectile.el")))
   )
 
 (when (package-installed-p 'projectile)
   (projectile-global-mode)
-  (setq projectile-enable-caching t)
+  ;; (setq projectile-enable-caching t)
   (setq projectile-indexing-method 'git)
   (setq projectile-use-git-grep t)
   (setq projectile-file-exists-remote-cache-expire nil)
