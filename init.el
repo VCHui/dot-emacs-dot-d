@@ -31,18 +31,17 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-;; el-get setup
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 (unless (package-installed-p 'el-get)
   (package-install 'el-get))
+
+(require 'el-get)
 (unless (file-directory-p "~/.emacs.d/el-get")
   (make-directory "~/.emacs.d/el-get"))
 (unless (file-directory-p "~/.emacs.d/el-get-user/recipes")
   (make-directory "~/.emacs.d/el-get-user/recipes"))
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-(require 'el-get)
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
-(package-initialize)
 
 ;; init.d
 (add-to-list 'load-path "~/.emacs.d/init.d")
