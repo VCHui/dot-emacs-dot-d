@@ -1,0 +1,8 @@
+(:name counsel-projectile-0.2.0
+       :url "https://github.com/ericdanan/counsel-projectile.git"
+       :description "ivy ui for projectile"
+       :type github
+       :branch "master"
+       :checkout "0.2.0"
+       :pkgname "ericdanan/counsel-projectile"
+       )

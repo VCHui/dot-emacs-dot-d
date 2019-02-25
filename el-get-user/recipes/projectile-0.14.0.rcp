@@ -1,8 +1,9 @@
 (:name projectile-0.14.0
-       :website "https://github.com/bbatsov/projectile"
+       :url "https://github.com/bbatsov/projectile.git"
        :description "Project Interaction Library"
        :type github
        :branch "master"
        :checkout "v0.14.0"
        :pkgname "bbatsov/projectile"
+       :depends (dash-2.14.1)
        )

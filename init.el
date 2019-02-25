@@ -34,27 +34,23 @@
 ;; el-get setup
 (unless (package-installed-p 'el-get)
   (package-install 'el-get))
-(when (package-installed-p 'el-get)
-  (add-to-list
-   'load-path (concat user-emacs-directory "el-get/el-get"))
-  (require 'el-get)
-  (add-to-list
-   'el-get-recipe-path (concat user-emacs-directory "el-get-user/recipes"))
-  (el-get 'sync)
-  )
+(unless (file-directory-p "~/.emacs.d/el-get")
+  (make-directory "~/.emacs.d/el-get"))
+(unless (file-directory-p "~/.emacs.d/el-get-user/recipes")
+  (make-directory "~/.emacs.d/el-get-user/recipes"))
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(require 'el-get)
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+(el-get 'sync)
+(package-initialize)
 
 ;; init.d
-(add-to-list 'load-path (concat user-emacs-directory "init.d"))
+(add-to-list 'load-path "~/.emacs.d/init.d")
 
 (require 'company-setup)
 (require 'ivy-setup); + swiper, counsel;
+(require 'projectile-setup); + dash;
 
-(when (package-installed-p 'el-get) (require 'projectile-setup));
-
-;; cc-mode setup
-(require 'cc-gtags-setup)
-(require 'cc-irony-setup);
-(add-hook 'c-mode-common-hook (lambda() (setq indent-tabs-mode nil)))
-
-;; python-mode setup
-(require 'python-setup);
+(require 'cc-gtags-setup); + counsel-gtags;
+(require 'cc-irony-setup); + company-irony;
+(require 'python-setup); + auto-complete;

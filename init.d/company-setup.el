@@ -1,10 +1,8 @@
 ;; company-setup
 
-(unless (package-installed-p 'company)
-  (package-install 'company))
+(el-get 'sync 'company-mode-0.9.9)
 
-(when (package-installed-p 'company)
-  (require 'company)
+(when (require 'company)
   (add-hook 'after-init-hook 'global-company-mode)
   (provide 'company-setup)
   )

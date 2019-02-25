@@ -1,0 +1,8 @@
+(:name dash-2.14.1
+       :url "https://github.com/magnars/dash.el.git"
+       :description "a modern list library"
+       :type github
+       :checkout "2.14.1"
+       :pkgname "magnars/dash.el"
+       :features dash dash-2.14.1
+)

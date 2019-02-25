@@ -4,7 +4,7 @@
   ;; depends: swiper, ivy
   (package-install 'counsel))
 
-(when (package-installed-p 'counsel)
+(when (require 'counsel)
   (ivy-mode 1)
   (setq ivy-use-virtual-buffers t)
   (setq ivy-count-format "(%d/%d) ")

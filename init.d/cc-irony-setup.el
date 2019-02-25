@@ -1,6 +1,8 @@
 ;; irony-cc-setup
 
-(unless (package-installed-p 'company-irony); + company, irony
+(require 'company); or error!
+(unless (package-installed-p 'company-irony)
+  ;; depends: irony
   (package-install 'company-irony)
   (unless (package-installed-p 'company-irony-c-headers)
     (package-install 'company-irony-c-headers)))

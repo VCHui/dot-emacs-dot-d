@@ -1,0 +1,7 @@
+(:name company-mode-0.9.9
+       :website "http://company-mode.github.io/"
+       :description "Modular in-buffer completion framework"
+       :type github
+       :checkout "0.9.9"
+       :pkgname "company-mode/company-mode"
+       )
