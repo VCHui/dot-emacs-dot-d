@@ -2,7 +2,7 @@
 Yet another personal `.emacs.d/` setup
 
 ## Reference version: emacs 25 on ubuntu 18.04
-* Use [branch master24](tree/master24) for emacs 24 on ubuntu 16.04
+* Use _branch_ **master24** for emacs 24 on ubuntu 16.04
 
 ## Setup
 There are many ways to setup
