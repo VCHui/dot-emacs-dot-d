@@ -3,8 +3,7 @@
 (unless (package-installed-p 'company)
   (package-install 'company))
 
-(when (package-installed-p 'company)
-  (require 'company)
+(when (require 'company)
   (add-hook 'after-init-hook 'global-company-mode)
-  (provide 'company-setup)
-  )
+  (add-hook 'compilation-shell-minor-mode-hook (lambda() (company-mode -1)))
+  (provide 'company-setup))

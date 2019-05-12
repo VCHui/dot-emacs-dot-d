@@ -1,17 +1,14 @@
 *~
 *\#*
 
-*-theme.el
+/run/
 
 /auto-save-list/
-/elpa*
-/elpa*/
-/el-get*
-/el-get*/
-!/el-get-user/
+/elpa/
 /url/
 
 recentf
+network-security.data
 projectile-bookmarks.eld
 tramp
 
