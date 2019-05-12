@@ -2,9 +2,11 @@
 Yet another personal `.emacs.d/` setup
 
 ## Reference version: emacs 25 on ubuntu 18.04
-* Use _branch_ **master24** for emacs 24 on ubuntu 16.04
+
+* Use _branch_ __master24__ for emacs 24 on __ubuntu 16.04__
 
 ## Setup
+
 There are many ways to setup
 1. Use the repository for `.emacs.d` directly.
 2. Symlink the repository to `.emacs.d`.
@@ -13,8 +15,17 @@ There are many ways to setup
    - `cwdemacs` sets `$HOME` to the repository and
      uses `$HOME/.emacs.d` that symlinks the repository itself;
 
-## Packages to setup
-* counsel - swiper, ivy
+* __mac os x__
+  - Put the script [`appemacs`](appemacs) as `emacs` on `$PATH`
+
+* Makefile
+  - `make setup` - to complete the setup
+  - `make clean` - to undo setup
+  - `make purge` - to clean up editions created by version control
+
+## Main packages to setup
+
 * company
+* counsel - swiper, ivy
 * projectile - counsel-projectile
 * python-mode - company-jedi
