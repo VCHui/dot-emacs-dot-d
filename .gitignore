@@ -16,3 +16,4 @@ tramp
 /.config/
 /.gnupg/
 /.local/
+/.python-environments/
