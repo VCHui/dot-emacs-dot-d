@@ -1,0 +1,5 @@
+#!/bin/bash
+# command-line emacsclient for mac os x
+EMACSDIR=Applications/Emacs.app/Contents/MacOS
+EMACSSOCK=$(lsof -c Emacs | grep emacs.*server | egrep -o '[^[:blank:]]*$')
+/Users/${USER}/${EMACSDIR}/bin/emacsclient -t -s ${EMACSSOCK} $@

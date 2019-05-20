@@ -1,3 +1,5 @@
 #!/bin/bash
 # command-line emacs for mac os x
-exec /Users/${USER}/Applications/Emacs.app/Contents/MacOS/Emacs -nw "$@"
+EMACSDIR=Applications/Emacs.app/Contents/MacOS
+exec /Users/${USER}/${EMACSDIR}/Emacs -nw "$@"
+
