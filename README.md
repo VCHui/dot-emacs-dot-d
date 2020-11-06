@@ -29,3 +29,6 @@ There are many ways to setup
 * counsel - swiper, ivy
 * projectile - counsel-projectile
 * python-mode - company-jedi
+
+## Mac specific setup
+* [`README_Mac.md`](README_Mac.md)
