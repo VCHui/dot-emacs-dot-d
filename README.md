@@ -29,7 +29,3 @@ There are many ways to setup
 * counsel - swiper, ivy
 * projectile - counsel-projectile
 * python-mode - company-jedi
-  - `jedi:install-server` in conda env requires
-    ```elisp
-	(setq jedi:environment-root "conda-env-prefix" )
-	```
