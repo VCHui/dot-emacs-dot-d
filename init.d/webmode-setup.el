@@ -21,7 +21,18 @@
   (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil))
   (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
   (add-to-list 'web-mode-indentation-params '("lineup-ternary" . nil))
-  (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.htm?\\'" . web-mode))
+  (setq
+   auto-mode-alist
+   (append
+    '(("\\.html?\\'" . web-mode)
+      ("\\.htm?\\'" . web-mode)
+      ("\\.css?\\'" . web-mode)
+      ("\\.json?\\'" . web-mode)
+      ("\\.js?\\'" . web-mode)
+      ("\\.jinja2?\\'" . web-mode)
+      ("\\.jinja?\\'" . web-mode)
+      )
+    auto-mode-alist
+    ))
   (provide 'webmode-setup)
   )
