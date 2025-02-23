@@ -34,5 +34,10 @@
       )
     auto-mode-alist
     ))
+  (setq
+   web-mode-engines-alist
+   '(("django" . "\\.htm\\'")
+     )
+   )
   (provide 'webmode-setup)
   )
