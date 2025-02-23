@@ -1,4 +1,4 @@
-;; basic-setup
+;; basic-setup - configuring built-in functions only
 
 (show-paren-mode t)
 (setq show-paren-style 'expression)
