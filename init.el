@@ -17,7 +17,7 @@
 (require 'magit-setup); + diff-hl;
 (require 'ivy-setup); depends:swiper,counsel;
 (require 'projectile-setup); +counsel-projectile;
-(require 'python-setup);
+(require 'python-conda-setup); +company-anaconda;
 (require 'webmode-setup);
 
 ;;
