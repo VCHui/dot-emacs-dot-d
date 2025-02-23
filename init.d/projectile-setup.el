@@ -7,7 +7,7 @@
   ;; (projectile-global-mode)
   (projectile-mode +1)
   ;; (setq projectile-enable-caching t)
-  (setq projectile-indexing-method 'native); or 'alien, or 'hybrid
+  (setq projectile-indexing-method 'alien); or 'native, or 'hybrid
   (setq projectile-use-git-grep t)
   (setq projectile-file-exists-remote-cache-expire nil)
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
