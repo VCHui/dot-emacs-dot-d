@@ -7,6 +7,12 @@
   (unless (package-installed-p 'mmm-mode)
     (package-install 'mmm-mode)))
 
+(when (package-installed-p 'mmm-mode)
+  (require 'mmm-auto)
+  (setq mmm-global-mode 'maybe); apply mmm-mode to ext
+  (mmm-add-mode-ext-class 'python-mode "\\.py\\'" 'web)
+  )
+
 (when (package-installed-p 'web-mode)
   (add-hook
    'web-mode-hook
