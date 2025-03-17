@@ -4,6 +4,10 @@
   (package-install 'web-mode))
 
 (when (package-installed-p 'web-mode)
+  (unless (package-installed-p 'mmm-mode)
+    (package-install 'mmm-mode)))
+
+(when (package-installed-p 'web-mode)
   (add-hook
    'web-mode-hook
    (lambda()
