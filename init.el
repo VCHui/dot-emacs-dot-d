@@ -20,4 +20,5 @@
 (require 'python-conda-setup); +company-anaconda;
 (require 'webmode-setup);
 
-;;
+(unless (package-installed-p 'ripgrep) (package-install 'ripgrep))
+
