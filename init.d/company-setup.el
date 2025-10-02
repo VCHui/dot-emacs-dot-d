@@ -9,5 +9,6 @@
   (add-hook
    'compilation-shell-minor-mode-hook
    (lambda() (company-mode -1)))
-  (setq company-dabbrev-downcase nil)
+  (setq company-dabbrev-downcase nil
+	company-idle-delay 0)
   (provide 'company-setup))
