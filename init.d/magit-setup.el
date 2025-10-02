@@ -1,7 +1,7 @@
 ;; magit-diff-hl-setup
 
 (unless (package-installed-p 'diff-hl) (package-install 'diff-hl))
-(when (package-installed-p 'diff-hl-mode)
+(when (package-installed-p 'diff-hl)
   (global-diff-hl-mode)
   (add-hook
    'find-file-hook
